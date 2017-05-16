@@ -120,12 +120,12 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
             manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
                 @Override
                 public int getSpanSize(int position) {
-                    if (position <= 3) {
-                        //隐藏
-                        imgBackTop.setVisibility(View.GONE);
-                    } else {
+                    if (position > 5) {
                         //显示
                         imgBackTop.setVisibility(View.VISIBLE);
+                    } else {
+                        //隐藏
+                        imgBackTop.setVisibility(View.GONE);
                     }
                     //只能返回1
                     return 1;
