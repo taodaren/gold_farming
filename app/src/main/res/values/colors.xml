@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="color160">#a0a0a0</color>
+    <color name="color239">#efeff0</color>
+    <color name="colorFengexian">#45a73a</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorAddCart">#c3d600</color>
+    <color name="colorQiangGou">#f84e37</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRadioButton">#f8f8f8</color>
+    <color name="defaultText">#595757</color><!--底部菜单文字默认颜色-->
+</resources>

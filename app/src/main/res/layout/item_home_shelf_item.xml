@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_shelf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_homepage_shelf"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@color/colorWhite"
+            app:srcCompat="@drawable/eg_category" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/text_shelf_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:paddingTop="20dp"
+                android:text="金品货架标题"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/text_shelf_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_shelf_title"
+                android:text="￥450.00"
+                android:textColor="@color/colorRed"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_shelf_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="10dp"
+                android:text="原价￥"
+                android:textColor="@color/color160" />
+
+            <TextView
+                android:id="@+id/text_shelf_old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/text_shelf_rmb"
+                android:paddingBottom="10dp"
+                android:text="268"
+                android:textColor="@color/color160" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="10dp"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_shelf_red"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/image_homepage_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:text="8"
+                    android:textColor="@color/colorRed"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image_homepage_num"
+                    android:background="@color/colorWhite"
+                    android:text="折"
+                    android:textColor="@color/colorRed"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_sheng_yu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="10dp"
+                android:text="剩余"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/text_home_subplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/text_sheng_yu"
+                android:paddingBottom="10dp"
+                android:text="497"
+                android:textColor="@color/colorBlack" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_view_kuan_fenge" />
+
+</LinearLayout>

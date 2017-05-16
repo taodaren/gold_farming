@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:mContext=".app.ProductDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/image_pro_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <ImageButton
+                    android:id="@+id/pro_info_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_launcher" />
+
+                <ImageButton
+                    android:id="@+id/pro_info_keep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_toLeftOf="@+id/pro_info_more"
+                    android:layout_toStartOf="@+id/pro_info_more"
+                    android:background="@mipmap/ic_launcher" />
+
+                <ImageButton
+                    android:id="@+id/pro_info_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@mipmap/ic_launcher" />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_view_line_fenge" />
+
+            <TextView
+                android:id="@+id/pro_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="商品详情标题"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/pro_info_cate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="分类：快菜种子" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/colorRed"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/pro_info_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25.00"
+                    android:textColor="@color/colorRed"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="￥" />
+
+                <TextView
+                    android:id="@+id/pro_info_price_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100.00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f5f5f5"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运费："
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/pro_info_yunfei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="免运费"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="所在地：" />
+
+                <TextView
+                    android:id="@+id/pro_info_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京 北京" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_view_line_fenge" />
+
+            <include layout="@layout/layout_view_kuan_fenge" />
+
+            <include layout="@layout/item_pro_det" />
+
+            <include layout="@layout/layout_view_line_fenge" />
+
+            <include layout="@layout/layout_view_kuan_fenge" />
+
+            <include layout="@layout/item_pro_det" />
+
+            <include layout="@layout/layout_view_line_fenge" />
+
+            <include layout="@layout/layout_view_kuan_fenge" />
+
+            <include layout="@layout/item_pro_det" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_pro_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:id="@+id/pro_info_kefu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_good_info_callcenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imageView"
+                android:text="客服"
+                android:textColor="@color/colorFengexian"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/pro_info_cart"
+            android:layout_width="120dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:background="@color/colorAddCart"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/pro_info_buy"
+            android:layout_width="120dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:background="@color/colorFengexian"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

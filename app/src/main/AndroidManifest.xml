@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiacms.goldfarming">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 从互联网加载图像 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 从文件或从互联网加载图像 -->
+    <application
+        android:name=".global.GoldApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_gold_farm"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_gold_farm"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"> <!-- 隐藏所有标题栏 -->
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.ProductDetailsActivity" />
+        <activity android:name=".activity.MyMsgActivity" />
+        <activity android:name=".activity.LoginAndRegisterActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity"></activity>
+    </application>
+
+</manifest>

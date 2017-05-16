@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GoldFarming</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="load_more">Load more</string>
+    <string name="no_more">No more</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="home_title_msg">通知，是运用广泛的知照性公文。用来发布法规、规章，转发 上级机关、同级机关和不相隶属机关的公文，批转下级机关的 公文，要求下级机关办理某项事务等。...</string>
+</resources>

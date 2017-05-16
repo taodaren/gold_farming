@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color239"
+    tools:mContext="com.xiacms.goldfarming.mode_type.fragment.TypeListFragment">
+
+    <!--隐藏 list view 滚动条：scrollbars="none"-->
+    <ListView
+        android:id="@+id/list_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:scrollbars="none" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="7" />
+
+</LinearLayout>

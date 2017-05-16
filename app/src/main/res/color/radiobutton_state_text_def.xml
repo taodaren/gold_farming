@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--文字颜色状态选择器-->
+<!--颜色状态选择器只能用作改变颜色的地方，例如改变文字颜色等场合，不能作为背景，当做背景时会出错，这点千万要注意。-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#45a73a" android:state_checked="true" /><!--选中状态-->
+    <item android:color="#45a73a" android:state_pressed="true" /><!--按下状态-->
+    <item android:color="#45a73a" android:state_selected="true" /><!--选择状态-->
+    <item android:color="@color/defaultText" /><!--未选择状态-->
+</selector>

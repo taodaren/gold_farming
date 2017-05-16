@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_item_type_right"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/image_category_xiang_qing"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/colorWhite"
+        app:srcCompat="@drawable/eg_category" />
+
+    <TextView
+        android:id="@+id/text_fl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_category_xiang_qing"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="8dp"
+        android:lines="1"
+        android:text="分类商品详情"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_fl_jia_ge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_fl_title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="￥25.00"
+        android:textColor="@color/colorRed" />
+
+    <TextView
+        android:id="@+id/text_fl_yuan_jia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_fl_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/text_fl_jia_ge"
+        android:text="￥100.00"
+        android:textColor="@color/color160" />
+</RelativeLayout>
