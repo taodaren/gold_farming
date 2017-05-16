@@ -102,6 +102,23 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     }
 
     /**
+     * 判断服务获取数据是否成功
+     * @return
+     */
+    private boolean checkData() {
+        if (hpBannerBean == null
+                || hpJumpBean == null || hpNoticeBean == null
+                || hpTimeBean == null || hpRecommend == null
+                || hpHotSeedBean == null || hpGoldShelf == null) {
+            return false;
+        } else {
+            //将数据传入到Adapter进行展示
+            sendAdapterSetLayout();
+            return true;
+        }
+    }
+
+    /**
      * 将数据传入到Adapter进行展示，设置数据及布局管理
      */
     private void sendAdapterSetLayout() {
@@ -155,6 +172,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 //解析数据
                 hpBannerBean = JSONArray.parseArray(response, BannerBean.class);
 //                Log.e(TAG, "processData: 解析 Banner 数据成功==" + hpBannerBean.size());
+                checkData();
             }
         });
     }
@@ -172,6 +190,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 //解析数据
                 hpJumpBean = JSONArray.parseArray(response, HomeJumpBean.class);
 //                Log.e(TAG, "processData: 解析 Channel 成功==" + hpJumpBean.size());
+                checkData();
             }
         });
     }
@@ -189,6 +208,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 //解析数据
                 hpNoticeBean = JSONArray.parseArray(response, HomeNoticeBean.class);
 //                Log.e(TAG, "processData: 解析 notice 数据成功==" + hpNoticeBean.size());
+                checkData();
             }
         });
     }
@@ -206,6 +226,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 //解析数据（非数组）
                 hpTimeBean = JSON.parseObject(response, HomeBackTimeBean.class);
 //                Log.e(TAG, "processData: 解析 kill time 数据成功==" + hpTimeBean.getBackTime());
+                checkData();
             }
         });
     }
@@ -223,6 +244,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 //解析数据
                 hpRecommend = JSON.parseObject(response, ProductBaseBean.class);
 //                Log.e(TAG, "processData: 解析 recommend 数据成功==" + hpRecommend.getName());
+                checkData();
             }
         });
     }
@@ -240,6 +262,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 //解析数据
                 hpHotSeedBean = JSONArray.parseArray(response, HomeHotBean.ProductBaseBean.class);
 //                Log.e(TAG, "processData: 解析 hot 数据成功==" + hpHotSeedBean.size());
+                checkData();
             }
         });
     }
@@ -257,6 +280,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 //解析数据
                 hpGoldShelf = JSONArray.parseArray(response, HomeShelfBean.class);
 //                Log.e(TAG, "processData: 解析 shelf 数据成功==" + hpGoldShelf.size());
+                checkData();
             }
         });
     }
