@@ -3,16 +3,20 @@
     android:id="@+id/relative_jp_tuijian"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color239"
     android:gravity="center_vertical"
-    android:background="@color/colorWhite">
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="240dp"
-        android:layout_weight="1"
         android:layout_gravity="center_vertical"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1"
         android:background="@color/colorWhite"
         android:orientation="vertical"
+        android:padding="1dp"
         android:weightSum="1">
 
         <TextView
@@ -50,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorWhite"
-            android:src="@drawable/eg_category" />
+            android:src="@mipmap/ic_launcher" />
     </LinearLayout>
 
     <LinearLayout
@@ -69,25 +73,23 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:gravity="center_vertical"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/homepage_name_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
                     android:lines="1"
-                    android:padding="5dp"
                     android:text="分类商品详情"
-                    android:textSize="10sp" />
+                    android:textSize="13sp" />
 
                 <TextView
                     android:id="@+id/homepage_price_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
                     android:text="￥25.00"
                     android:textColor="@color/colorRed"
                     android:textSize="15sp" />
@@ -97,7 +99,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:paddingLeft="10dp"
                     android:text="原价￥100.00"
                     android:textColor="@color/color160"
                     android:textSize="8sp" />
@@ -106,11 +107,16 @@
             <ImageView
                 android:id="@+id/homepage_image_2"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/colorWhite"
-                android:src="@drawable/eg_category" />
+                android:src="@mipmap/ic_launcher" />
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color239" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -122,25 +128,23 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:gravity="center_vertical"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/homepage_name_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
                     android:lines="1"
-                    android:padding="5dp"
                     android:text="分类商品详情"
-                    android:textSize="10sp" />
+                    android:textSize="13sp" />
 
                 <TextView
                     android:id="@+id/homepage_price_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
                     android:text="￥25.00"
                     android:textColor="@color/colorRed"
                     android:textSize="15sp" />
@@ -150,7 +154,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:paddingLeft="10dp"
                     android:text="原价￥100.00"
                     android:textColor="@color/color160"
                     android:textSize="8sp" />
@@ -159,10 +162,10 @@
             <ImageView
                 android:id="@+id/homepage_image_3"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/colorWhite"
-                android:src="@drawable/eg_category" />
+                android:src="@mipmap/ic_launcher" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

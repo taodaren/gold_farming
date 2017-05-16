@@ -2,7 +2,6 @@ package com.xiacms.goldfarming.mode_home.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,6 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.xiacms.goldfarming.R;
-import com.xiacms.goldfarming.global.Constans;
 import com.xiacms.goldfarming.mode_home.bean.HomeShelfBean;
 
 import java.util.List;
@@ -34,7 +32,7 @@ public class ShelfRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ShelfViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_home_shelf_item, null));
+        return new ShelfViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_home_shelf_info, null));
     }
 
     @Override
