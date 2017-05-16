@@ -33,7 +33,7 @@ import okhttp3.Call;
  * 首页
  */
 public class HomeFragment extends BaseFragment implements View.OnClickListener {
-    private static final String TAG = Bat_HomeFragment.class.getSimpleName();
+    private static final String TAG = HomeFragment.class.getSimpleName();
 
     //标题右侧消息
     private ImageView imgTitleMsg;
